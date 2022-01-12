@@ -1737,7 +1737,7 @@ client.on("message", message => {
         .setColor('0x00acee')
         .setThumbnail('https://cdn.iconscout.com/icon/free/png-512/twitter-circle-1868970-1583134.png')
         .setDescription('Follow to get the clan and Brawlball community news')
-        .addField('Link :','https://twitter.com/OurStyle16', true)
+        .addField('Link :','https://twitter.com/ourstylebb', true)
         .setFooter("\n\n Our Style - Brawlball",client.user.avatarURL())
       message.channel.send(embed)
   }
@@ -2828,143 +2828,143 @@ client.on("error", () => { client.login(process.env.BOT_TOKEN)
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
-client.on("message", async message => {
+// client.on("message", async message => {
 
-  const prefix = "!";
+//   const prefix = "!";
 
-  if (message.author.bot) return;
-  if (!message.guild) return;
-  if (!message.content.startsWith(prefix)) return;
+//   if (message.author.bot) return;
+//   if (!message.guild) return;
+//   if (!message.content.startsWith(prefix)) return;
 
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+//   const args = message.content.slice(prefix.length).trim().split(/ +/g);
 
-  const cmd = args.shift().toLowerCase();
+//   const cmd = args.shift().toLowerCase();
 
-  if (cmd === "timeout") { 
-    if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to this")
+//   if (cmd === "timeout") { 
+//     if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to this")
 
-    let member = message.mentions.members.first();
+//     let member = message.mentions.members.first();
 
-  if(args[1].toLowerCase() === "1"){
-    member.roles.add('777199407883878401')
+//   if(args[1].toLowerCase() === "1"){
+//     member.roles.add('777199407883878401')
 
-    member.roles.remove('731528561969856622')
-    member.roles.remove('731528298445668442')
-    member.roles.remove('759441333584265247')
-    member.roles.remove('812452159773343765')
-    member.roles.remove('793151150479114252')
-    member.roles.remove('817726951962705930')
+//     member.roles.remove('731528561969856622')
+//     member.roles.remove('731528298445668442')
+//     member.roles.remove('759441333584265247')
+//     member.roles.remove('812452159773343765')
+//     member.roles.remove('793151150479114252')
+//     member.roles.remove('817726951962705930')
 
-    let embed = new Discord.MessageEmbed()
-    .setTitle("You have been timed out")
-    .setColor("#FF0000")
-    .setThumbnail(client.user.avatarURL())
-    .setDescription("Reason : You broke rule 1")
-    .addField("1. Be respectful","You can joke with friends but don't go overboard with it.")
-    .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
-    .setFooter(message.author.username, message.author.avatarURL())
+//     let embed = new Discord.MessageEmbed()
+//     .setTitle("You have been timed out")
+//     .setColor("#FF0000")
+//     .setThumbnail(client.user.avatarURL())
+//     .setDescription("Reason : You broke rule 1")
+//     .addField("1. Be respectful","You can joke with friends but don't go overboard with it.")
+//     .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
+//     .setFooter(message.author.username, message.author.avatarURL())
 
-  member.send(embed);     
-  message.channel.send(`${member} got timed out by `+message.author.username)
-}
+//   member.send(embed);     
+//   message.channel.send(`${member} got timed out by `+message.author.username)
+// }
 
- //****************************************************************************************** */
+//  //****************************************************************************************** */
 
- else if(args[1].toLowerCase() === "2"){
-  member.roles.add('777199407883878401')
-  member.roles.remove('731528561969856622')
-  member.roles.remove('731528298445668442')
-  member.roles.remove('759441333584265247')
-  member.roles.remove('812452159773343765')
-  member.roles.remove('793151150479114252')
-  member.roles.remove('817726951962705930')
+//  else if(args[1].toLowerCase() === "2"){
+//   member.roles.add('777199407883878401')
+//   member.roles.remove('731528561969856622')
+//   member.roles.remove('731528298445668442')
+//   member.roles.remove('759441333584265247')
+//   member.roles.remove('812452159773343765')
+//   member.roles.remove('793151150479114252')
+//   member.roles.remove('817726951962705930')
 
-  let embed = new Discord.MessageEmbed()
-  .setTitle("You have been timed out")
-  .setColor("#FF0000")
-  .setThumbnail(client.user.avatarURL())
-  .setDescription("Reason : You broke rule 2")
-  .addField("2. Don't spam"," That's pretty much annoying for most people.")
-  .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
-  .setFooter(message.author.username, message.author.avatarURL())
+//   let embed = new Discord.MessageEmbed()
+//   .setTitle("You have been timed out")
+//   .setColor("#FF0000")
+//   .setThumbnail(client.user.avatarURL())
+//   .setDescription("Reason : You broke rule 2")
+//   .addField("2. Don't spam"," That's pretty much annoying for most people.")
+//   .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
+//   .setFooter(message.author.username, message.author.avatarURL())
 
-member.send(embed);     
-message.channel.send(`${member} got timed out by `+message.author.username)
-}
+// member.send(embed);     
+// message.channel.send(`${member} got timed out by `+message.author.username)
+// }
 
-//****************************************************************************************** */
+// //****************************************************************************************** */
 
-else if(args[1].toLowerCase() === "3"){
-  member.roles.add('777199407883878401')
-  member.roles.remove('731528561969856622')
-  member.roles.remove('731528298445668442')
-  member.roles.remove('759441333584265247')
-  member.roles.remove('812452159773343765')
-  member.roles.remove('793151150479114252')
-  member.roles.remove('817726951962705930')
+// else if(args[1].toLowerCase() === "3"){
+//   member.roles.add('777199407883878401')
+//   member.roles.remove('731528561969856622')
+//   member.roles.remove('731528298445668442')
+//   member.roles.remove('759441333584265247')
+//   member.roles.remove('812452159773343765')
+//   member.roles.remove('793151150479114252')
+//   member.roles.remove('817726951962705930')
 
-  let embed = new Discord.MessageEmbed()
-  .setTitle("You have been timed out")
-  .setColor("#FF0000")
-  .setThumbnail(client.user.avatarURL())
-  .setDescription("Reason : You broke rule 3")
-  .addField("3. Racism and derogatory terms are not tolerated in this server."," No Racial slurs, even if it was meant as a joke. Swearing is allowed, but again, don't go overboard with it.")
-  .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
-  .setFooter(message.author.username, message.author.avatarURL())
+//   let embed = new Discord.MessageEmbed()
+//   .setTitle("You have been timed out")
+//   .setColor("#FF0000")
+//   .setThumbnail(client.user.avatarURL())
+//   .setDescription("Reason : You broke rule 3")
+//   .addField("3. Racism and derogatory terms are not tolerated in this server."," No Racial slurs, even if it was meant as a joke. Swearing is allowed, but again, don't go overboard with it.")
+//   .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
+//   .setFooter(message.author.username, message.author.avatarURL())
 
-  member.send(embed);     
-  message.channel.send(`${member} got timed out by `+message.author.username)
-}
+//   member.send(embed);     
+//   message.channel.send(`${member} got timed out by `+message.author.username)
+// }
 
-//****************************************************************************************** */
+// //****************************************************************************************** */
 
-else if(args[1].toLowerCase() === "4"){
-  member.roles.add('777199407883878401')
-  member.roles.remove('731528561969856622')
-  member.roles.remove('731528298445668442')
-  member.roles.remove('759441333584265247')
-  member.roles.remove('812452159773343765')
-  member.roles.remove('793151150479114252')
-  member.roles.remove('817726951962705930')
+// else if(args[1].toLowerCase() === "4"){
+//   member.roles.add('777199407883878401')
+//   member.roles.remove('731528561969856622')
+//   member.roles.remove('731528298445668442')
+//   member.roles.remove('759441333584265247')
+//   member.roles.remove('812452159773343765')
+//   member.roles.remove('793151150479114252')
+//   member.roles.remove('817726951962705930')
 
-  let embed = new Discord.MessageEmbed()
-  .setTitle("You have been timed out")
-  .setColor("#FF0000")
-  .setThumbnail(client.user.avatarURL())
-  .setDescription("Reason : You broke rule 4")
-  .addField("4. Anything illicit or malicious or NSFW (links,images,sounds etc) is strictly prohibited in this server."," You can only share NSFW stuff in #huris-people , try to avoid it in #memes")
-  .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
-  .setFooter(message.author.username, message.author.avatarURL())
+//   let embed = new Discord.MessageEmbed()
+//   .setTitle("You have been timed out")
+//   .setColor("#FF0000")
+//   .setThumbnail(client.user.avatarURL())
+//   .setDescription("Reason : You broke rule 4")
+//   .addField("4. Anything illicit or malicious or NSFW (links,images,sounds etc) is strictly prohibited in this server."," You can only share NSFW stuff in #huris-people , try to avoid it in #memes")
+//   .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
+//   .setFooter(message.author.username, message.author.avatarURL())
 
-  member.send(embed);     
-  message.channel.send(`${member} got timed out by `+message.author.username)
-}
+//   member.send(embed);     
+//   message.channel.send(`${member} got timed out by `+message.author.username)
+// }
 
-//****************************************************************************************** */
+// //****************************************************************************************** */
 
-else if(args[1].toLowerCase() === "5"){
-  member.roles.add('777199407883878401')
-  member.roles.remove('731528561969856622')
-  member.roles.remove('731528298445668442')
-  member.roles.remove('759441333584265247')
-  member.roles.remove('812452159773343765')
-  member.roles.remove('793151150479114252')
-  member.roles.remove('817726951962705930')
+// else if(args[1].toLowerCase() === "5"){
+//   member.roles.add('777199407883878401')
+//   member.roles.remove('731528561969856622')
+//   member.roles.remove('731528298445668442')
+//   member.roles.remove('759441333584265247')
+//   member.roles.remove('812452159773343765')
+//   member.roles.remove('793151150479114252')
+//   member.roles.remove('817726951962705930')
 
-  let embed = new Discord.MessageEmbed()
-  .setTitle("You have been timed out")
-  .setColor("#FF0000")
-  .setThumbnail(client.user.avatarURL())
-  .setDescription("Reason : You broke rule 5")
-  .addField("5. only @ certain amount of users in the server only if necessary."," If it's not important, don't use it.")
-  .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
-  .setFooter(message.author.username, message.author.avatarURL())
+//   let embed = new Discord.MessageEmbed()
+//   .setTitle("You have been timed out")
+//   .setColor("#FF0000")
+//   .setThumbnail(client.user.avatarURL())
+//   .setDescription("Reason : You broke rule 5")
+//   .addField("5. only @ certain amount of users in the server only if necessary."," If it's not important, don't use it.")
+//   .addField("The following roles have been removed:","OutCasts , Valorant , Minecraft , Rocket League , Among Us , Anime Otaku \n Get them back in #roles after your time out is finished by Removing your old reaction And react again")
+//   .setFooter(message.author.username, message.author.avatarURL())
 
-  member.send(embed);     
-  message.channel.send(`${member} got timed out by `+message.author.username)
-}
-  else message.channel.send("wrong command")
-}})
+//   member.send(embed);     
+//   message.channel.send(`${member} got timed out by `+message.author.username)
+// }
+//   else message.channel.send("wrong command")
+// }})
 
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -2978,39 +2978,39 @@ else if(args[1].toLowerCase() === "5"){
 /////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
 
-client.on("message", async message => {
-  if ( message.channel.id === "759441730805825578"|| message.channel.id === "812651063022321674"|| message.channel.id === "793256406559227914"|| message.channel.id === "723287151357329539"|| message.channel.id === "730386275806347325"|| message.channel.id === "793256715885608960"|| message.channel.id === "535540529379672074"|| message.channel.id === "734397358091141130"|| message.channel.id === "732313729428881499") {
-    if(message.attachments.size > 0) {
-        message.delete();
-        message.reply("You can't send any files here. Share them in the correct channel. ")
-        .then(msg => {
-          setTimeout(() => msg.delete(), 10000)
-          })
-         .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);  
-      }
-    }})
+// client.on("message", async message => {
+//   if ( message.channel.id === "759441730805825578"|| message.channel.id === "812651063022321674"|| message.channel.id === "793256406559227914"|| message.channel.id === "723287151357329539"|| message.channel.id === "730386275806347325"|| message.channel.id === "793256715885608960"|| message.channel.id === "535540529379672074"|| message.channel.id === "734397358091141130"|| message.channel.id === "732313729428881499") {
+//     if(message.attachments.size > 0) {
+//         message.delete();
+//         message.reply("You can't send any files here. Share them in the correct channel. ")
+//         .then(msg => {
+//           setTimeout(() => msg.delete(), 10000)
+//           })
+//          .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);  
+//       }
+//     }})
 
     
-    client.on("message", async message => {
-      if ( message.channel.id === "759441730805825578"|| message.channel.id === "812651063022321674"|| message.channel.id === "793256406559227914"|| message.channel.id === "723287151357329539"|| message.channel.id === "730386275806347325"|| message.channel.id === "793256715885608960"|| message.channel.id === "535540529379672074"|| message.channel.id === "734397358091141130"|| message.channel.id === "732313729428881499") {
-        if(message.content.includes('http')) {
-          if(message.content.includes('discord.gg/') || message.content.includes('discordapp.com/invite/')) {
-            message.delete();
-            message.reply("You can't send any Discord invites here. Share them in the correct channel.")
-            .then(msg => {
-              setTimeout(() => msg.delete(), 10000)
-              })
-          }
-          else{
-            message.delete();
-            message.reply("You can't send any links here. Share them in the correct channel.")
-         .then(msg => {
-          setTimeout(() => msg.delete(), 10000)
-          })
-         .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
-          }
-        }
-        }})
+//     client.on("message", async message => {
+//       if ( message.channel.id === "759441730805825578"|| message.channel.id === "812651063022321674"|| message.channel.id === "793256406559227914"|| message.channel.id === "723287151357329539"|| message.channel.id === "730386275806347325"|| message.channel.id === "793256715885608960"|| message.channel.id === "535540529379672074"|| message.channel.id === "734397358091141130"|| message.channel.id === "732313729428881499") {
+//         if(message.content.includes('http')) {
+//           if(message.content.includes('discord.gg/') || message.content.includes('discordapp.com/invite/')) {
+//             message.delete();
+//             message.reply("You can't send any Discord invites here. Share them in the correct channel.")
+//             .then(msg => {
+//               setTimeout(() => msg.delete(), 10000)
+//               })
+//           }
+//           else{
+//             message.delete();
+//             message.reply("You can't send any links here. Share them in the correct channel.")
+//          .then(msg => {
+//           setTimeout(() => msg.delete(), 10000)
+//           })
+//          .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
+//           }
+//         }
+//         }})
 
 
 
