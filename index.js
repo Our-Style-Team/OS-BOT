@@ -4505,5 +4505,4 @@ client.on('guildMemberAdd', member => {
 
   channel.send(embed);
 })
-//client.login("NzkzMzA1MzAyMjYyNzQzMDYw.X-qVIg.79yR8ep98bDz0I4d_31iM3m23Qo")
-client.login("NzQ5NTAyNjg1NzY1NDM1NDYz.G4oYgZ.zspvtr05ChPhMXzh69LWj5sOYo_dLHOXtkiSbc")
+
