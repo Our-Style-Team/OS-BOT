@@ -1,9 +1,9 @@
 {
 "description":"Test",
-"main":"bot.js",
+"main":"index.js",
 "prefix" : "+",
 "scripts":{
-  "start":"node bot.js"},
+  "start":"node index.js"},
      "dependencies":{
     "discord.js":"12.4.1",
     "request":"2.81.0"
