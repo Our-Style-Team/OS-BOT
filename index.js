@@ -4505,4 +4505,4 @@ client.on('guildMemberAdd', member => {
 
   channel.send(embed);
 })
-
+client.login(process.env.BOT_TOKEN)
